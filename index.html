@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animaciones css</title>
+	<style>
+		.cuadro{
+		    position:absolute;
+		    top:30px;
+		    left:300px;
+			background: violet;
+			height: 1900px;
+			width:800px;
+			border: 5px solid black;
+		}
+        .boton1{
+        	position:absolute;
+		    top:80px;
+		    left:400px;
+			background: lightpink;
+			height: 70px;
+			width:120px;
+			border: 5px solid black;
+			font-size: 60px;
+			padding-left: 10px;
+			box-sizing: border-box;
+			z-index: 5;
+        }
+        
+        .boton3{
+        	position:absolute;
+		    top:80px;
+		    left:890px;
+			background: lightpink;
+			height: 70px;
+			width:120px;
+			border: 5px solid black;
+			font-size: 60px;
+			padding-left: 10px;
+			box-sizing: border-box;
+					z-index: 5;
+        }
+        .cuadro3{
+		    position:absolute;
+		    top:200px;
+		    left:400px;
+			background: pink;
+			height: 400px;
+			width:600px;
+			border: 5px solid black;
+		    z-index: 5;
+		}
+		.cuadro4{
+		    position:absolute;
+		    top:800px;
+		    left:400px;
+			background: url(animación.gif);
+			height: 400px;
+			width:600px;
+			border: 5px solid black;
+			 z-index: 2;
+			 background-size: cover;
+		}
+		.cuadro5{
+		    position:absolute;
+		    top:1400px;
+		    left:400px;
+			background: url(hola.png);
+			height: 400px;
+			width:600px;
+			border: 5px solid black;
+			 z-index: 2;
+			 background-size: cover;
+		}
+		@keyframes hola{
+			0%{
+				top:0px;
+				left:0px;
+			}
+			30%{
+				top:0px;
+				left:450px;
+			}
+
+			50%{
+				top:330px;
+				left:450px;
+			}
+			70%{
+				top:330px;
+				left: 0px;
+			}
+			100%{
+				top:0px;
+				left:0px;
+			}
+		}
+		.cuadro6{
+		    position:absolute;
+		    top:210px;
+		    left:410px;
+			height: 100px;
+			width:200px;
+		    z-index: 5;
+		    font-size: 70px;
+		    animation: hola 10s infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="cuadro"></div>
+	<div class="boton1"><a href="#cuadro4">Ani</a></div>
+	<div class="boton3"><a href="#cuadro5">Ban</a></div>
+	<div id="cuadro3" class="cuadro3">
+		  <div class="cuadro6">Hola</div>
+	</div>
+	<div id="cuadro4" class="cuadro4"></div>
+	<div id="cuadro5" class="cuadro5"></div>
+
+</body>
+</html>
